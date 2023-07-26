@@ -1,0 +1,15 @@
+version = 0.1
+[default]
+[default.pipeline_bootstrap]
+[default.pipeline_bootstrap.parameters]
+pipeline_user = "arn:aws:iam::598792377165:user/terra-test-user"
+permissions_provider = "AWS IAM"
+
+[dev]
+[dev.pipeline_bootstrap]
+[dev.pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::598792377165:user/terra-test-user"
+cloudformation_execution_role = "arn:aws:iam::598792377165:user/terra-test-user"
+artifacts_bucket = ""
+image_repository = ""
+region = "ap-south-1"
